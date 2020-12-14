@@ -13,9 +13,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Modal" component={CustomModal} />
         <Stack.Screen name="Learning" component={Learning} options={{ title: 'Learning React Netive' }} />
         <Stack.Screen name="Form" component={Form} options={{ title: 'Email Form' }} />
+        <Stack.Screen name="Modal" component={CustomModal} />
       </Stack.Navigator>
     </NavigationContainer>
   );

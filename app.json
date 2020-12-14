@@ -2,11 +2,12 @@
   "name": "react-native",
   "displayName": "react-native",
   "expo": {
-    "name": "react-native",
-    "slug": "react-native",
+    "name": "first-app",
+    "slug": "first-app",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": ""
   }
 }

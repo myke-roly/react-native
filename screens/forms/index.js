@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Alert, Button } from 'react-native';
 
-const Form = ({ navigation, route }) => {
+const Form = ({ route }) => {
   const [email, setEmail] = useState('');
 
   function handleChange(e, text) {
-    console.log(e.target.value);
     setEmail(e.target.value);
   }
 
@@ -26,7 +25,7 @@ const Form = ({ navigation, route }) => {
 
   return (
     <View style={styles.form}>
-      <Button title="Learning" color="#454545" onPress={() => navigation.navigate('Learning')} />
+      {/* <Button title="Learning" color="#454545" onPress={() => navigation.navigate('Modal')} /> */}
       <Text>Form {route.params.name}</Text>
       <TextInput
         style={styles.formInput}

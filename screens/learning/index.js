@@ -47,7 +47,22 @@ const Learning = ({ navigation }) => {
             margin: 'auto',
           }}
         >
-          <Button title="Form" onPress={() => navigation.navigate('Form', { name: 'Mike' })} />
+          <View
+            style={{
+              marginTop: 10,
+              flex: 1,
+              flexDirection: 'row',
+              gap: 1,
+            }}
+          >
+            <Button
+              color="#444"
+              style={{ flex: 1 }}
+              title="Form"
+              onPress={() => navigation.navigate('Form', { name: 'Mike' })}
+            />
+            <Button color="#444" style={{ flex: 1 }} title="Modal" onPress={() => navigation.navigate('Modal')} />
+          </View>
           <View style={styles.header}>
             <Text style={styles.titleText}> My first App </Text>
           </View>

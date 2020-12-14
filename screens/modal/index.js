@@ -26,9 +26,7 @@ const CustomModals = () => {
           </View>
         </View>
       </Modal>
-      <TouchableHighlight style={{ backgroundColor: 'blue' }} onPress={showModal}>
-        <Button width="150" color="orange" title="show modal" style={styles.btn} />
-      </TouchableHighlight>
+      <Button width="150" color="orange" title="show modal" style={styles.btn} onPress={showModal} />
     </View>
   );
 };
